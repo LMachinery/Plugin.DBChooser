@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{72A4CE1F-0D0A-4D37-A523-B339983DA882}</ProjectGuid>
+    <TemplateGuid>{b6f3ff35-79b2-4f25-a2fc-60a7cf61013b}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NativeLibrary</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>NativeLibrary</AssemblyName>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingCoreSource Include="Structs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DBChooser.bundle\blue_large_button%402x.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_back.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_large_button_pressed.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_back%402x.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_button.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_back_pressed.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_large_button.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_back_button_landscape_pressed%402x.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_button_landscape.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_button_landscape_pressed.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_button_landscape%402x.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_button_pressed%402x.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\header.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_back_pressed%402x.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\header%402x.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_back_button_landscape_pressed.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\app-icon.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_large_button_pressed%402x.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_back_button_landscape%402x.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\app-icon%402x.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_button_pressed.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_button_landscape_pressed%402x.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_back_button_landscape.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\blue_button%402x.png" />
+    <BundleResource Include="Resources\DBChooser.bundle\de.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\zh-Hans.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\ja.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\en.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\es.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\it.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\es-ES.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\ms.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\ko.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\zh-Hant.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\pl.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\ru.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\fr.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\id.lproj\DBChooser.strings" />
+    <BundleResource Include="Resources\DBChooser.bundle\pt.lproj\DBChooser.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="Native References/libDBChooser.a">
+      <Kind>Static</Kind>
+    </NativeReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
+</Project>
